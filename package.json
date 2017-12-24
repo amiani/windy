@@ -1,0 +1,22 @@
+{
+  "name": "windy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "67kingsmoves.js",
+  "babel": {
+    "presets": ["env"]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "windykings": "babel 67kingsmoves.js -d lib && node 'lib\/67kingsmoves.js'",
+    "stochastic": "babel 68stochasticwind.js -d lib && node 'lib\/68stochasticwind.js'",
+    "sarsan" : "babel sarsan.js -d lib && node 'lib\/sarsan.js'",
+    "sarsan2" : "babel sarsan2.js -d lib && node 'lib\/sarsan2.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
